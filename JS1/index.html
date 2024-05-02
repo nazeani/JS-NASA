@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: auto;
+            
+            align-items: center;
+            width: 100%;
+            
+        }
+        .details-container{
+            width:100%;
+            height: 300PX;
+            background-image: url('https://apod.nasa.gov/apod/image/0911/mwpan_mellinger_big.jpg');
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 25px;
+        }
+        .button1{
+            padding: 10px;
+            border-radius: 10px;
+            background-color: hsl(211, 64%, 43%);
+            color:  rgb(255, 255, 255);
+        }
+        .dateInput{
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .date{
+            margin:auto;
+            text-align: center;
+        }
+        .image-container{
+            background-color: gray;
+            border-radius: 30px;
+            margin-top: 5px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav >
+        <div style="text-align: center; background-color: black; border-radius: 30px; ">
+            <img src="https://science.nasa.gov/_nuxt/nasa-logo.CFKB7Wqh.svg" alt="Logo" width="100" height="74">
+        </div>
+      </nav>
+       <br>
+      <div style="border-radius:16px; padding: 100px 100px 200px 20px;  background-image: url('https://science.nasa.gov/wp-content/uploads/2023/04/hubble-nebula-orion-nebula-display-jpg.webp?w=1536&format=webp');">
+        <h1 style="font-size: 70px; color: white;">What Did Sky<br>See on Your Birthday?</h1>
+        <p style="font-size: 30px;color: white;">Sky explores the universe 24 hours a day, 7 days a week. <br>That means it has observed some fascinating cosmic wonder every day of the year, including on your birthday.</p>
+      </div>
+      <br>
+      <hr>
+      <br>
+    <div class="container">
+        <div class="details-container">
+            <label for="dateInput"><h1 class="date" style="color: rgb(140, 140, 140);">SELECT YOUR BIRTHDAY DATE:</h1></label>
+            <input type="date" class="dateInput">
+            <button class="button1">FETCH IMAGE</button>
+        </div>
+        <div class="image-container"></div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
